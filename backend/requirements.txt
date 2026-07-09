@@ -6,8 +6,5 @@ pydantic
 python-dotenv
 groq==0.37.1
 chromadb==1.5.7
-sentence-transformers
+fastembed
 pymupdf==1.28.0
-torch
-transformers
-huggingface-hub

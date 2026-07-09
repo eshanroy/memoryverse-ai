@@ -1,13 +1,12 @@
-from sentence_transformers import SentenceTransformer
+from fastembed import TextEmbedding
 
-# Load the embedding model once when the server starts
-model = SentenceTransformer("all-MiniLM-L6-v2")
+# Load model once
+model = TextEmbedding()
 
 
 def create_embedding(text: str):
     """
     Convert text into a vector embedding.
     """
-    embedding = model.encode(text)
-
+    embedding = next(model.embed([text]))
     return embedding.tolist()
