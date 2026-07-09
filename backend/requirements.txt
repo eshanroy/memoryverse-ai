@@ -1,6 +1,7 @@
 fastapi==0.139.0
 uvicorn==0.44.0
 python-multipart
+sqlmodel
 sqlalchemy
 pydantic
 python-dotenv
